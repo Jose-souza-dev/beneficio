@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+
+	<div class="container">
+		<br>
+		<h2>Cadastro para benefício.</h2>
+		<br>
+			<p>Seu nome</p>	
+			<input type="text" id="nome">
+			<p>Quantas pessoas tem na sua Família?</p>
+			<input type="number" id="qtdp">
+			<P>Qual a renda total da Família?</P>
+			<input type="number" id="rendaf">
+			<P>Quantos trabalham na Família?</P>
+			<input type="number" id="qtf">
+
+				<select name="" id="trabalho" onchange="atualizaSelect()">
+					<option value="">Você Trabalha?</option>
+					<option value="Sim">Sim</option>
+					<option value="Não">Não</option>
+				</select>
+			<input type="button" value="Enviar" onclick="coletaDados()">
+
+			<br>
+
+			<h2>Dados cadastrados</h2>
+			<div class="recebeDados">
+					
+			</div>
+			<p id="resultado"></p>
+
+
+	</div><!--FIM DA DIV CONTAINER-->
+
+
+	
+
+	<script type="text/javascript" src="script.js"></script>
+
+	
+</body>
+</html>
